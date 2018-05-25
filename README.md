@@ -1,16 +1,16 @@
 # wallet
 
-A crypto wallet prototype.
+A crypto wallet prototype project. Explorations in Angular and beyond...
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 6.0.3.
 
 ## Stack
   - angular 6
+  - rxjs v6
   - bootstrap
   - material
   - angular elements
   - clarity design system
-  - rxjs
   - firebase
   - angularfire
 
