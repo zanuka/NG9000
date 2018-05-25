@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "ng-scaffold": {
+    "wallet": {
       "root": "",
       "sourceRoot": "src",
       "projectType": "application",
@@ -13,7 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/ng-scaffold",
+            "outputPath": "dist/wallet",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -23,6 +23,9 @@
               "src/assets"
             ],
             "styles": [
+              {
+                "input": "node_modules/@angular/material/prebuilt-themes/indigo-pink.css"
+              },
               "src/styles.css",
               {
                 "input": "./node_modules/bootstrap/dist/css/bootstrap.css"
@@ -57,18 +60,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "ng-scaffold:build"
+            "browserTarget": "wallet:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "ng-scaffold:build:production"
+              "browserTarget": "wallet:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "ng-scaffold:build"
+            "browserTarget": "wallet:build"
           }
         },
         "test": {
@@ -79,6 +82,9 @@
             "tsConfig": "src/tsconfig.spec.json",
             "karmaConfig": "src/karma.conf.js",
             "styles": [
+              {
+                "input": "node_modules/@angular/material/prebuilt-themes/indigo-pink.css"
+              },
               "src/styles.css"
             ],
             "scripts": [],
@@ -102,7 +108,7 @@
         }
       }
     },
-    "ng-scaffold-e2e": {
+    "wallet-e2e": {
       "root": "e2e/",
       "projectType": "application",
       "architect": {
@@ -110,7 +116,7 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "ng-scaffold:serve"
+            "devServerTarget": "wallet:serve"
           }
         },
         "lint": {
@@ -125,5 +131,5 @@
       }
     }
   },
-  "defaultProject": "ng-scaffold"
+  "defaultProject": "wallet"
 }
