@@ -9,6 +9,7 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
   - bootstrap
   - material
   - angular elements
+  - clarity design system
   - rxjs
   - firebase
   - angularfire

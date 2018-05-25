@@ -29,12 +29,16 @@
               "src/styles.css",
               {
                 "input": "./node_modules/bootstrap/dist/css/bootstrap.css"
-              }
+              },
+              "node_modules/@clr/ui/clr-ui.min.css",
+              "node_modules/@clr/icons/clr-icons.min.css"
             ],
             "scripts": [
               {
                 "input": "node_modules/document-register-element/build/document-register-element.js"
-              }
+              },
+              "node_modules/@clr/icons/clr-icons.min.js",
+              "node_modules/@webcomponents/custom-elements/custom-elements.min.js"
             ]
           },
           "configurations": {
