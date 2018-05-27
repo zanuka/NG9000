@@ -1,6 +1,6 @@
-# wallet
+# chauncy-biggums
 
-A crypto wallet prototype project. Explorations in Angular and beyond...
+your butler, your everything... prototyping the past from the future
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 6.0.3.
 
