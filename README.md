@@ -1,6 +1,6 @@
-# chauncy-biggums
+# chauncy biggums
 
-your butler, your everything... prototyping the past from the future
+![](./img/chauncy-biggums.png)
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 6.0.3.
 
