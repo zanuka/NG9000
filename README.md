@@ -1,6 +1,6 @@
-# chimcham
+# ng9000
 
-Prototyping project for Angular 6
+prototypes :: explorations
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 6.0.3
 
