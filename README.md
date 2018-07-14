@@ -1,4 +1,4 @@
-# ng9000
+# angular-xl
 
 prototypes :: explorations
 

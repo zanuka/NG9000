@@ -3,6 +3,10 @@ import { FormsModule} from '@angular/forms';
 import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
+
+import { UserComponent} from './user/user.component';
+import { UsersComponent } from './users/users.component';
+
 import { ServerComponent} from './server/server.component';
 import { ServersComponent } from './servers/servers.component';
 
@@ -15,6 +19,8 @@ import { ClarityModule } from '@clr/angular';
 @NgModule({
   declarations: [
     AppComponent,
+    UserComponent,
+    UsersComponent,
     ServerComponent,
     ServersComponent
   ],
