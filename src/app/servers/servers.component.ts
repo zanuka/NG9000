@@ -10,6 +10,7 @@ export class ServersComponent implements OnInit {
   allowNewServer = false;
   serverCreationStatus = '';
   serverCreated = false;
+  servers = ['JohnnyFive Server', 'TimmyTampton Server'];
 
   // now two-way bound via ngModel
   serverName = '';
@@ -25,6 +26,7 @@ export class ServersComponent implements OnInit {
 
   onCreateServer() {
     this.serverCreated = true;
+    this.servers.push(this.serverName);
     this.serverCreationStatus = 'Server ' + this.serverName + ' was created';
   }
 
