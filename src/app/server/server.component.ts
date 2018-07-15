@@ -3,7 +3,15 @@ import {min} from 'rxjs/operators';
 
 @Component({
   selector: 'app-server',
-  templateUrl: './server.component.html'
+  templateUrl: './server.component.html',
+  styles: [`
+    .online {
+      color: white;
+    }
+    .offline {
+      color: yellow;
+    }
+  `]
 })
 export class ServerComponent {
   // generate some random server numbers
@@ -23,6 +31,5 @@ export class ServerComponent {
 
   getColor() {
     return this.serverStatus === 'online' ? 'green' : 'red';
-
   }
 }
