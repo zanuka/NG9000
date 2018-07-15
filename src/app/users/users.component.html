@@ -17,6 +17,6 @@
         [disabled]="userNameIsEmpty()"
         (click)="clearUserName()">Reset User</button>
 
-<p>{{ userCreationStatus }}</p>
+<p *ngIf="userCreated">User was created, user name is {{ userName }}</p>
 
 

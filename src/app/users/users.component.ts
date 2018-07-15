@@ -9,6 +9,7 @@ export class UsersComponent implements OnInit {
 
   allowNewUser = false;
   userCreationStatus = '';
+  userCreated = false;
 
   // now two-way bound via ngModel
   userName = '';
@@ -32,6 +33,7 @@ export class UsersComponent implements OnInit {
   }
 
   onCreateUser() {
+    this.userCreated = true;
     this.userCreationStatus = 'User ' + this.userName + ' was created';
   }
 
