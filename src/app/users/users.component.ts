@@ -16,10 +16,19 @@ export class UsersComponent implements OnInit {
   constructor() {
     setTimeout(() => {
       this.allowNewUser = true;
-    }, 2000)
+    }, 2000);
   }
 
   ngOnInit() {
+  }
+
+  userNameIsEmpty() {
+    return this.userName.length === 0;
+  }
+
+  clearUserName() {
+    this.userName = '';
+    this.userCreationStatus = '';
   }
 
   onCreateUser() {
